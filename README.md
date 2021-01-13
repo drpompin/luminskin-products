@@ -1,4 +1,4 @@
-# Todo App
+# Luminskin-Products App
 
 This mini E-commerce App was built with Reactjs, Graphql, Apollo-client, Apollo/react-hooks for state management and styled with styled-components...
 The was was built as a test project for a job application to showcase my understanding of Reactjs, graphql and apollo-client and to

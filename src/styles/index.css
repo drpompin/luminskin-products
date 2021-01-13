@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	/* background:#f5f5f4; */
+	font-family: 'Lora', sans-serif;
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background:#f5f5f4;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	monospace;
+}

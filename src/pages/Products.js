@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import gql from 'graphql-tag'
 import { useQuery } from '@apollo/react-hooks'
-import { useMutation } from '@apollo/react-hooks'
+// import { useMutation } from '@apollo/react-hooks'
 
 import {
 	BaseDiv,
@@ -37,7 +37,7 @@ function ProductsPage({ isPublic = false }) {
 
 	const [state, setState] = useState(false)
 
-	const [selectedCurrenci, setCurrencyChange] = useState('select one')
+	// const [selectedCurrenci, setCurrencyChange] = useState('select one')
 
 	// const updateCache = (cache, { data }) => {
 	// 	// If this is for the public feed, do nothing
@@ -156,7 +156,7 @@ function ProductsPage({ isPublic = false }) {
 						<Cart
 							hideCart={hideCart}
 							// handleCurrencyChange={handleCurrenciChange}
-							selectedCurrency={selectedCurrenci}
+							// selectedCurrency={selectedCurrenci}
 						/>
 					</>)
 

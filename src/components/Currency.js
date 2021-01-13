@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 // import { Query } from 'react-apollo'
 import { useQuery } from '@apollo/react-hooks'
@@ -17,13 +17,13 @@ const GET_ALL_CURRENCIES = gql`
     }
 `
 
-const GET_PRICE_CURRENCY = gql`
-	{
-		products {
-			price(currency: USD)
-		}
-	}
-`
+// const GET_PRICE_CURRENCY = gql`
+// 	{
+// 		products {
+// 			price(currency: USD)
+// 		}
+// 	}
+// `
 
 
 const CurrencySelect = styled.select`
@@ -46,7 +46,7 @@ function Currency(props) {
     // console.log('valueeee', value);
 
     const { data, loading, error } = useQuery(GET_ALL_CURRENCIES)
-    const { data: currencyData, loading: currencyLoading, error: currencyError } = useQuery(GET_ALL_CURRENCIES)
+    // const { data: currencyData, loading: currencyLoading, error: currencyError } = useQuery(GET_ALL_CURRENCIES)
     if (loading) return <h4>Loading...</h4>
     if (error) console.log(error)
     console.log('props in currency', props)

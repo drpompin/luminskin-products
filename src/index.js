@@ -12,7 +12,7 @@ import { makeVar } from '@apollo/react-hooks'
 
 export const cartVar = makeVar([])
 
-const httpLink = new HttpLink({ uri: 'https://pangaea-interviews.now.sh/api/graphql' })
+const httpLink = new HttpLink({ uri: 'https://pangaea-interviews.now.sh/api/graphql/' })
 
 const authLink = setContext((_, { headers }) => {
 	return {
